@@ -56,29 +56,28 @@ Follow these steps to get the development environment set up:
 
  1. ## Clone the repository to your local machine.
      
-       git clone <repo-link>
-       cd <repo-folder>
+         git clone <repo-link>
+         cd <repo-folder>
    
   2. ## Create virtual environment
-      
-       python -m venv venv
-  3. ## On Windows, use this command to activate
+         python -m venv venv
+  4. ## On Windows, use this command to activate
    
-      venv\Scripts\activate
+         venv\Scripts\activate
   
-  4. ## On macOS/Linux, use this command to activate
-      source venv/bin/activate
+  5. ## On macOS/Linux, use this command to activate
+         source venv/bin/activate
 
-  5. ## Install Dependencies
+  6. ## Install Dependencies
      ## Install the required Python packages by running:
               pip install -r requirements.txt
      ## If the requirements.txt file doesn't exist, install the following manually:
             - pip install Django==5.0.6
             - pip install djangorestframework==3.15.1
             - pip install psycopg2
-  6. ## Set Up the Database
+  7. ## Set Up the Database
          python manage.py migrate
-  7. ## Run the Development Server
+  8. ## Run the Development Server
         python manage.py runserver
      
      Visit http://127.0.0.1:8000/ in your browser to access the web app.
