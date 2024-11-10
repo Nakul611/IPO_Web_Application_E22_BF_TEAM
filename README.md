@@ -78,7 +78,7 @@ Follow these steps to get the development environment set up:
   7. ## Set Up the Database
          python manage.py migrate
   8. ## Run the Development Server
-        python manage.py runserver
+          python manage.py runserver
      
      Visit http://127.0.0.1:8000/ in your browser to access the web app.
 
