@@ -24,18 +24,19 @@ This project involves the development of a web application and REST API that pro
 
 - **`app/`**: This is the main Django app folder that contains all application-related files.
   - **`migrations/`**: This folder holds all the database migration files. These are automatically created when running `makemigrations` and `migrate`.
-  - **`static/`**: Contains all static assets like CSS, JavaScript, and image files.
-    - **`css/`**: Contains all CSS files for styling the frontend.
-    - **`js/`**: Contains JavaScript files for client-side behavior.
-    - **`images/`**: Stores image files used in the project.
-  - **`templates/`**: Contains HTML templates that are rendered by Django views.
-    - **`index.html`**: The home page HTML template.
   - **`__init__.py`**: This file marks the directory as a Python package.
   - **`admin.py`**: Contains configuration for the Django admin interface.
   - **`apps.py`**: Defines the app configuration for Django.
   - **`models.py`**: Defines the database models (tables).
   - **`views.py`**: Contains views for rendering HTML templates and handling API requests.
   - **`urls.py`**: Defines URL routing specific to the app.
+- **`static/`**: Contains all static assets like CSS, JavaScript, and image files.
+  - **`css/`**: Contains all CSS files for styling the frontend.
+  - **`js/`**: Contains JavaScript files for client-side behavior.
+  - **`images/`**: Stores image files used in the project.
+- **`templates/`**: Contains HTML templates that are rendered by Django views.
+  - **`index.html`**: The home page HTML template.
+  
 
 - **`project/`**: This is the main project folder containing Django settings and deployment configurations.
   - **`settings.py`**: Contains the global settings and configuration for the Django project (like database, middleware, and static file settings).
