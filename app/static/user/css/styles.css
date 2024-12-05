@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body {
+    font-family: Poppins, sans-serif;
+    background-color: #f1eeee;
+    }
+    
+    .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    }
+    
+    .navbar{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    }
+    
+    .logo{
+    height: 65px;
+    width: 65px;
+    }
+    
+    .company_logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    }
+    
+    .navigation a, .sign-in, .sign-up {
+    text-decoration: none;
+    font-size: small;
+    font-weight: 500;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+    color: #9a9a9a;
+    }
+    
+    
+    .navigation a:hover{
+    color:#7c7c7c
+    }
+    
+    .rotated{
+      transform: rotate(180deg);
+      transition: transform 0.5s ease;
+    }
+    
+    .sign-in, .sign-up {
+    background-color: white;
+    color: #9a9a9a;
+    border: none;
+    padding: 8px 16px;
+    }
+    
+    .sign-up {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    }
+    
+    .auth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    }
+    
+    .auth img{
+    height: 20px;
+    width: 20px;
+    }
+    
+    .breadcrumb {
+      text-decoration: none;
+    padding: 20px;
+    margin-left: 40px;
+    font-size: 0.9em;
+    color: #666;
+    }
+    
+    .breadcrumb h2{
+    color: #000000;
+    margin-top: 25px;
+    }
+    
+    .breadcrumb p{
+    color: #000000;
+    margin-top: 5px;
+    }
+    
+    .ipo-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 20px;
+    }
+    
+    .ipo-card {
+    margin-left: 40px;
+    height: 350px; /* Adjusted for logo */
+    width: 400px;
+    background-color: #ffffff;
+    padding: 30px;
+    transition: box-shadow 0.3s;
+    border-radius: 8px;
+    }
+    
+    .ipo-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .company-header{
+    padding-left: 10px;
+    justify-content: left;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    }
+    
+    .company-header {
+    color: #414BEA;
+    }
+    
+    .ipo-details{
+    font-size: small;
+    padding: 30px 10px;
+    display: grid;
+    grid-row-gap: 50px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    }
+    
+    .ipo-details span{
+    gap: 5px;
+    font-size: medium;
+    font-weight: 600;
+    color: #000000;
+    }
+    
+    
+    .company-logo {
+    border: none;
+    }
+    
+    .action-buttons {
+    display: flex;
+    justify-content: left;
+    padding-left: 10px;
+    gap: 10px;
+    }
+    
+    .action-buttons .btn {
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    }
+    
+    .rhp {
+    border: 1px solid #000000;
+    color: #007bff;
+    background-color: #ffffff;
+    }
+    
+    .drhp {
+    border: 1px solid #ff5e00;
+    background-color: #ff5e00;
+    color: #ffffff;
+    }
+    
+    
+    .faq {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 8px;
+    }
+    
+    .faq h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    }
+    
+    .faq-item {
+    margin-bottom: 10px;
+    }
+    
+    .faq-item h3 {
+    cursor: pointer;
+    }
+    
+    .answer {
+      display: none;
+      padding: 10px;
+      background-color: #f9f9f9;
+      border-left: 4px solid #007bff;
+      transition: max-height 0.3s ease, opacity 0.3s ease;
+    }
+    
+    .faq-item h3:hover {
+      color: #007bff;
+      cursor: pointer;
+    }
+    
+    
+    .footer {
+      background-color: #f9f9f9;
+      color: #333;
+      font-family: Arial, sans-serif;
+      padding: 40px 20px;
+    }
+    
+    .footer-top {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 40px;
+    }
+    
+    .footer-column {
+      flex: 1 1 180px;
+      margin-right: 20px;
+    }
+    
+    .footer-column h4 {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    
+    .footer-column ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .footer-column ul li {
+      margin-bottom: 5px;
+    }
+    
+    .footer-column ul li a {
+      text-decoration: none;
+      color: #007bff;
+    }
+    
+    .footer-column ul li a:hover {
+      text-decoration: underline;
+    }
+    
+    .footer-middle {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+    
+    .footer-logo {
+      max-width: 150px;
+      margin-bottom: 10px;
+    }
+    
+    .footer-social a {
+      margin-right: 10px;
+    }
+    
+    .footer-social img {
+      width: 24px;
+      height: 24px;
+    }
+    
+    .footer-bottom {
+      text-align: center;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+    
+    .footer-credit {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    
+    .footer-credit p {
+      margin: 5px 0;
+    }
+
+    .rotated {
+      transform: rotate(180deg);
+      transition: transform 0.3s ease;
+    }

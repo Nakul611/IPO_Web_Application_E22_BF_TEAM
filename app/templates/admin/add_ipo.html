@@ -1,0 +1,90 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add IPO</title>
+    <link rel="stylesheet" href="{% static 'admin/css/form.css' %}">
+    <script src="{% static 'admin/js/form.js' %}" defer></script>
+</head>
+<body>
+    <h1>Add IPO</h1>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <!-- Company Logo -->
+        <label for="company_logo">Company Logo:</label>
+        <input type="file" id="company_logo" name="company_logo" aria-label="Company Name" required><br>
+
+        <!-- Company Name -->
+        <label for="company_name">Company Name:</label>
+        <input type="text" id="company_name" name="company_name" required><br>
+
+        <!-- Price Band -->
+        <label for="price_band">Price Band:</label>
+        <input type="text" id="price_band" name="price_band" required><br>
+
+        <!-- Open Date -->
+        <label for="open_date">Open Date:</label>
+        <input type="date" id="open_date" name="open_date" required><br>
+
+        <!-- Close Date -->
+        <label for="close_date">Close Date:</label>
+        <input type="date" id="close_date" name="close_date" required><br>
+
+        <!-- Issue Size -->
+        <label for="issue_size">Issue Size:</label>
+        <input type="text" id="issue_size" name="issue_size" required><br>
+
+        <!-- Issue Type -->
+        <label for="issue_type">Issue Type:</label>
+        <select id="issue_type" name="issue_type" required>
+            <option value="Book Building">Book Building</option>
+            <option value="Fixed Price">Fixed Price</option>
+        </select><br>
+
+        <!-- Listing Date -->
+        <label for="listing_date">Listing Date:</label>
+        <input type="date" id="listing_date" name="listing_date" required><br>
+
+        <!-- Status -->
+        <label for="status">Status:</label>
+        <select id="status" name="status" required>
+            <option value="Open">Open</option>
+            <option value="Closed">Closed</option>
+            <option value="Upcoming">Upcoming</option>
+        </select><br>
+
+        <!-- IPO Price -->
+        <label for="ipo_price">IPO Price:</label>
+        <input type="number" id="ipo_price" name="ipo_price" required><br>
+
+        <!-- Listing Price -->
+        <label for="listing_price">Listing Price:</label>
+        <input type="number" id="listing_price" name="listing_price"><br>
+
+        <!-- Listing Gain -->
+        <label for="listing_gain">Listing Gain (%):</label>
+        <input type="number" id="listing_gain" name="listing_gain"><br>
+
+        <!-- Current Market Price (CMP) -->
+        <label for="cmp">Current Market Price (CMP):</label>
+        <input type="number" id="cmp" name="cmp"><br>
+
+        <!-- Current Return -->
+        <label for="current_return">Current Return (%):</label>
+        <input type="number" id="current_return" name="current_return"><br>
+
+        <!-- RHP PDF -->
+        <label for="rhp_pdf">RHP PDF:</label>
+        <input type="file" id="rhp_pdf" name="rhp_pdf"><br>
+
+        <!-- DRHP PDF -->
+        <label for="drhp_pdf">DRHP PDF:</label>
+        <input type="file" id="drhp_pdf" name="drhp_pdf"><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

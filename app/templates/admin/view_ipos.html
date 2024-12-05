@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View IPOs</title>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'admin/css/view_ipo.css' %}">
+    <script src="{% static 'admin/js/script.js' %}"></script>
+</head>
+<body>
+    <div class="container">
+        {% include 'admin/navbar.html' %}
+        <h1>All IPOs</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Company Name</th>
+                    <th>Price Band</th>
+                    <th>Open Date</th>
+                    <th>Close Date</th>
+                    <th>Listing Date</th>
+                    <th>IPO Price</th>
+                    <th>Listing Price</th>
+                    <th>Current Market Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for ipo in ipos %}
+                    <tr>
+                        <td>{{ ipo.company_name }}</td>
+                        <td>{{ ipo.price_band }}</td>
+                        <td>{{ ipo.open_date }}</td>
+                        <td>{{ ipo.close_date }}</td>
+                        <td>{{ ipo.listing_date }}</td>
+                        <td>{{ ipo.ipo_price }}</td>
+                        <td>{{ ipo.listing_price }}</td>
+                        <td>{{ ipo.current_market_price }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

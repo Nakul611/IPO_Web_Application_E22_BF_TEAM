@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="{% static 'admin/css/dashboard.css' %}">
+    <link rel="icon" href="{% static 'assets/other item uploading soon/android app icon.png' %}">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        {% include 'admin/navbar.html' %}
+        <main class-"content">
+            <div class="header">
+                <div class="input-container">
+                    <input type="text" placeholder="Search">
+                    <i class="bx bx-search"></i>
+                </div>
+                <div class="user-info">
+                    <img src="" alt="User Profile">
+                    <select id="user_profile" name="user_profile">
+                        <option value="User 1">Hi, Vishal</option>
+                        <option value="User 2">Hi, Kunal</option>
+                    </select>
+                    <i class='bx bx-bell'></i>
+                </div>
+            </div>
+            <section class="dashboard">
+                <h1>Dashboard</h1>
+                <div class="stats">
+                    <div class="ipo-count">
+                        <h4>IPO Dashboard India</h4>
+                        <h6>IPO in Gain</h6>
+                        <div class="circle-container">
+                            <div class="circle orange">
+                                <span class="number">30</span>
+                                <span class="text">Total IPO</span>
+                            </div>
+                            <div class="circle purple">
+                                <span class="number">9</span>
+                                <span class="text">IPO in Loss</span>
+                            </div>
+                            <div class="circle blue">
+                                <span class="number">20</span>
+                                <span class="text">IPO in Gain</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quick-links">
+                        <h4>Quick Links</h4>
+                        <h6>Adipiscing elit, sed do eiusmod tempar</h6>
+                        <table class="link-lists">
+                            <tr>
+                                <td><img src="#" placeholder="NSE"></td>
+                                <td><div>NSE</div></td>
+                                <td><a href="#"> Visit Now </a></td>
+                            </tr>
+                            <tr>
+                                <td><img src="#" placeholder="BSE"></td>
+                                <td><div>BSE</div></td>
+                                <td><a href="#"> Visit Now </a></td>
+                            </tr>
+                            <tr>
+                                <td><img src="#" placeholder="SEBI"></td>
+                                <td><div>SEBI</div></td>
+                                <td><a href="#"> Visit Now </a></td>
+                            </tr>
+                            <tr>
+                                <td><img src="#" placeholder="MC"></td>
+                                <td><div>Money Control </div></td>
+                                <td><a href="#"> Visit Now </a></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="reports">
+                        <h4>Main board IPO</h4>
+                        <h6>From 01 Jan 2024</h6>
+                        <div></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="{% static 'script.js'%}"></script>
+</body>
+</html>

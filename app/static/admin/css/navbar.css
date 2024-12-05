@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: #d4d8e3;
+    color: white;
+    width: 200px;
+    padding: 25px;
+}
+
+.sidebar .logo {
+    display: flex;
+    margin-bottom: 10px;
+    background-color: transparent;
+}
+
+.sidebar img {
+    transform: scale(1.2);
+}
+
+.menu {
+    background-color: transparent;
+    margin-top: 20px;
+}
+
+.section-title {
+    font-size: 0.9em;
+    color: #a5b1cc;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0px 15px;
+    background-color: transparent;
+}
+
+.menu li{
+    background-color: #3c4d71;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: transparent;
+    margin-bottom: 20px;
+}
+
+.menu ul li a {
+    background-color: transparent;
+    text-decoration: none;
+    color: #000000;
+    font-size: 0.9em;
+    display: block;
+    padding: 3px 12px;
+    transition: background 0.3s;
+}
+
+.menu i{
+    margin-right: 5px;
+    height: 15px;
+    width: auto;
+    color: #838383;
+    background-color: transparent;
+}
+
+.menu ul li a.active, .menu ul li a:hover {
+    border-radius: 5px;
+    background-color: #a89feb;
+    opacity: 50%;
+}

@@ -1,0 +1,56 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="{% static 'admin/css/navbar.css' %}">
+    <link rel="icon" href="{% static 'assets/other item uploading soon/android app icon.png' %}">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <aside class="sidebar">
+        <img src={% static 'assets/logo/admin logo.png'%} class="logo">
+        <nav class="menu">
+            <ul>
+                <li class="section-title">Menu</li>
+                <li>
+                    <i class='bx bx-bar-chart'></i>
+                    <a href="#" class="active">Dashboard</a>
+                </li>
+                <li>
+                    <i class='bx bxs-cart-alt'></i>
+                    <a href="{%url 'view_ipos'%}">Manage IPO</a>
+                </li>
+                <li>
+                    <i class='bx bx-list-ul'></i>
+                    <a href="#">IPO Subscription</a>
+                </li>
+                <li>
+                    <i class='bx bxs-message-square-dots'></i>
+                    <a href="#">IPO Allotment</a>
+                </li>
+                <li class="section-title">Others</li>
+                <li>
+                    <i class='bx bx-cog'></i>
+                    <a href="#">Settings</a>
+                </li>
+                <li>
+                    <i class='bx bxs-wallet-alt'></i>
+                    <a href="#">API Manager</a>
+                </li>
+                <li>
+                    <i class='bx bx-user'></i>
+                    <a href="#">Accounts</a>
+                </li>
+                <li>
+                    <i class='bx bx-info-circle'></i>
+                    <a href="#">Help</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+</body>
+</html>
