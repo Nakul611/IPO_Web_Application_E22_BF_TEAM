@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    background-color: #f9fafc;
+}
+
+.register {
+    margin: 0px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.register h2{
+    margin-left: 20px;
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.register a{
+    /* z-index: 2px; */
+    padding: 5px 10px;
+    font-size: medium;
+    text-decoration: none;
+    border: 1px solid;
+    border-radius: 5px;
+    color: rgba(147, 24, 255, 0.867);
+    background-color: transparent;
+}
+
+.btn-action {
+    margin-right: 55px;
+    display: flex;
+    gap: 30px;
+}
+
+.ipo-info {
+    display: flex;
+}
+
+.ipo-tags {
+    border-right: 3px solid #929191;
+    width: 400px;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 40px 40px;
+    border-radius: 10px;
+    width: 500px;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+form h1 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 20px;
+}
+
+.form-grid label {
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dcdcdc;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #000000;
+    background-color: #f9f9f9;
+}
+
+input::placeholder {
+    color: #888;
+}
+
+select {
+    font-weight: 400;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+input[type="file"] {
+    border: none;
+    background-color: #f9f9f9;
+    padding: 10px;
+}
+
+input[type="file"]::file-selector-button {
+    background-color: #e5b3f7;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-right: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="file"]::file-selector-button:hover {
+    background-color: #aa60c0;
+}
+
+@media screen and (max-width: 768px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    button {
+        width: 100%;
+    }
+}

@@ -4,9 +4,9 @@ from . import views
 urlpatterns = [
     # Custom admin dashboard
     path('admin/', views.admin_dashboard, name='admin_dashboard'),
-    path('admin/add-ipo/', views.add_ipo, name='add_ipo'),
-    path('admin/view-ipos/', views.view_all_ipos, name='view_ipos'),
-    path('admin/signin/', views.signin, name='signin'),
+    path('admin/manage-ipo/add-ipo/', views.add_ipo, name='add_ipo'),
+    path('admin/manage_ipo/', views.manage_ipo, name='manage_ipo'),
+    path('admin/auth/signin/', views.signin, name='signin'),
 
 
     # User dashboard

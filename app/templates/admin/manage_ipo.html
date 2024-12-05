@@ -1,0 +1,45 @@
+{% load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="{% static 'admin/css/manage_ipo.css' %}">
+    <script src="{% static 'admin/js/manage_ipo.js'%}" defer></script>
+</head>
+<body>
+    <div class="container">
+        {% include 'admin/navbar.html' %}
+        <div>
+            {% include 'admin/admin_info.html'%}
+            <div class="content">
+                <div class="register">
+                    <h2>All IPOs</h2>
+                    <a href={%url 'add_ipo'%}>Register IPO</a>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Company</th>
+                            <th>Price Band</th>
+                            <th>Open</th>
+                            <th>Close Date</th>
+                            <th>Issue Size</th>
+                            <th>Issue Type</th>
+                            <th>Listing Date</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                            <th>Delete/View</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Rows will be dynamically populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

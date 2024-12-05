@@ -18,38 +18,39 @@
                 <li class="section-title">Menu</li>
                 <li>
                     <i class='bx bx-bar-chart'></i>
-                    <a href="#" class="active">Dashboard</a>
+                    <a href="{%url 'admin_dashboard'%}" class="{% if active_page == 'dashboard' %}active{% endif %}">Dashboard</a>
                 </li>
                 <li>
                     <i class='bx bxs-cart-alt'></i>
-                    <a href="{%url 'view_ipos'%}">Manage IPO</a>
+                    <a href="{% url 'manage_ipo' %}" class="{% if active_page == 'manage_ipo' %}active{% endif %}">Manage IPO</a>
                 </li>
                 <li>
                     <i class='bx bx-list-ul'></i>
-                    <a href="#">IPO Subscription</a>
+                    <a href="#" class="{% if active_page == 'ipo_subscription' %}active{% endif %}">IPO Subscription</a>
                 </li>
                 <li>
                     <i class='bx bxs-message-square-dots'></i>
-                    <a href="#">IPO Allotment</a>
+                    <a href="#" class="{% if active_page == 'ipo_allotment' %}active{% endif %}">IPO Allotment</a>
                 </li>
                 <li class="section-title">Others</li>
                 <li>
                     <i class='bx bx-cog'></i>
-                    <a href="#">Settings</a>
+                    <a href="#" class="{% if active_page == 'settings' %}active{% endif %}">Settings</a>
                 </li>
                 <li>
                     <i class='bx bxs-wallet-alt'></i>
-                    <a href="#">API Manager</a>
+                    <a href="#" class="{% if active_page == 'api_manager' %}active{% endif %}">API Manager</a>
                 </li>
                 <li>
                     <i class='bx bx-user'></i>
-                    <a href="#">Accounts</a>
+                    <a href="#" class="{% if active_page == 'accounts' %}active{% endif %}">Accounts</a>
                 </li>
                 <li>
                     <i class='bx bx-info-circle'></i>
-                    <a href="#">Help</a>
+                    <a href="#" class="{% if active_page == 'help' %}active{% endif %}">Help</a>
                 </li>
             </ul>
+            
         </nav>
     </aside>
 </body>

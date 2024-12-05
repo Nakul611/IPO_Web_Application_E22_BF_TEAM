@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    background-color: #f9fafc;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.register {
+    margin: 0px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.register a{
+    z-index: 2px;
+    padding: 5px 10px;
+    font-size: medium;
+    text-decoration: none;
+    border: 1px solid;
+    border-radius: 5px;
+    color: rgba(147, 24, 255, 0.867);
+    background-color: transparent;
+}
+
+table{
+    width: 100%;
+}
+
+th {
+    font-size: medium;
+    font-weight: 500;
+}
+
+td {
+    padding: 10px 25px;
+    font-size: small;
+    font-weight: 400;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(137, 43, 226, 0.274);
+}
+
+.status-ongoing {
+    border: 1px;
+    color: green;
+    font-weight: bold;
+}
+
+.status-coming {
+    color: orange;
+    font-weight: bold;
+}
+
+.status-new {
+    color: red;
+    font-weight: bold;
+}
+
+/* Buttons Styling */
+.btn-action {
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-delete {
+    font-size: large;
+    color: red;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.btn-view {
+    font-size: large;
+    color: black;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}

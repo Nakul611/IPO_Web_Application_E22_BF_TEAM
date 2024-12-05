@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="{% static 'admin/css/admin_info.css' %}">
+    <link rel="icon" href="{% static 'assets/other item uploading soon/android app icon.png' %}">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="header">
+        <div class="input-container">
+            <input type="text" placeholder="Search">
+            <i class="bx bx-search"></i>
+        </div>
+        <div class="user-info">
+            <img src="" alt="User Profile">
+            <select id="user_profile" name="user_profile">
+                <option value="User 1">Hi, Vishal</option>
+                <option value="User 2">Hi, Kunal</option>
+            </select>
+            <i class='bx bx-bell'></i>
+        </div>
+    </div>
+</body>
+</html>
